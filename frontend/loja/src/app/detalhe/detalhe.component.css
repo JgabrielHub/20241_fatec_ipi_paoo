@@ -1,0 +1,47 @@
+.valor {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .promo {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .product-detail {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .product-image {
+    max-height: 500px;
+    object-fit: cover;
+    margin: 5%;
+  }
+  
+  .product-description-heading {
+    margin-top: 10px;
+  }
+  
+  .valor {
+    font-size: 1.25em;
+    color: #28a745;
+  }
+  
+  .promo {
+    font-size: 1.25em;
+    color: #dc3545;
+  }
+  
+  .product-stock-label {
+    margin-top: 15px;
+  }
+  
+  .back-button {
+    text-align: center;
+  }
+  
+  .add-to-cart {
+    text-align: center;
+    font-size: 1.2em;
+  }

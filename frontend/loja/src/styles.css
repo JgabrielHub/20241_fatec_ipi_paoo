@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+body {
+  line-height: 1.5em;
+  color: #191919;
+  background: whitesmoke;
+  font-family: Trebuchet MS, sans-serif;
+}
+.card{
+  background-color: var(--bs-gray-200);
+}
+.card-body{
+  background-color: var(--bs-gray-200);
+}
+footer {
+  max-width: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  background-image: radial-gradient(at 30% top, #031d33 0%, rgba(var(--tmdbDarkBlue), 1) 70%);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+}
+
+:root {
+    --headerescuro: #3d4b5b;
+    --azulEscuro: #003764;
+    --verdeEsmeralda: #02c06e;
+    --VerdeAzulado: #01c6ac;
+    --Laranja:#EF7627;
+    --LaranjaClaro: #FF9A56;
+}
+.azul{
+  background: var(--azulEscuro);
+  color: white;
+}
+
+:root, [data-bs-theme=light] {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+}
+.btn-primary {
+  background-color: var(--verdeEsmeralda);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--VerdeAzulado);
+}
+
+.valor{
+  color: var(--bs-green);
+  font-weight: bold;
+}
+
+.btn-orange {
+  --bs-btn-color: #fff;
+  --bs-btn-bg:  var(--Laranja);
+  --bs-btn-border-color: var(--Laranja);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--LaranjaClaro);
+  --bs-btn-hover-border-color: var(--LaranjaClaro);
+  --bs-btn-focus-shadow-rgb: 225, 83, 97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-orange);
+  --bs-btn-active-border-color: var(--bs-orange);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--Laranja);
+  --bs-btn-disabled-border-color: var(--Laranja);
+}

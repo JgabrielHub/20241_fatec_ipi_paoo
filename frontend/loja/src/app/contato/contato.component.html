@@ -1,0 +1,35 @@
+<div class="container mt-5">
+  <div class="card">
+    <Div class="card-header">
+
+      <h2 class="text-center">Contato</h2>
+      <p class="text-center">Entre em contato com a nossa loja virtual para melhor atendê-lo.</p>
+      
+    </Div>
+      <div class="mt-5 card-body">
+    <div *ngIf="mensagem" class="alert alert-info text-center">{{ mensagem }}</div>
+    
+    <form (ngSubmit)="enviar()">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome completo:</label>
+        <input type="text" class="form-control" id="nome" formControlName="nome" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail:</label>
+        <input type="email" class="form-control" id="email" formControlName="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="assunto" class="form-label">Assunto:</label>
+        <input type="text" class="form-control" id="assunto" formControlName="assunto" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem:</label>
+        <textarea class="form-control" id="mensagem" formControlName="mensagem" rows="3" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>

@@ -1,0 +1,51 @@
+<div class="container mt-5">
+  <h2>Cesta de Compras</h2>
+  <div *ngIf="mensagem" class="alert alert-info">{{ mensagem }}</div>
+  <table class="table" *ngIf="lista.length > 0">
+    <thead>
+      <tr>
+        <th scope="col">Produto</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col">Preço Unitário</th>
+        <th scope="col">Total</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr *ngFor="let item of lista">
+        <td>{{ item.nomeProduto }}</td>
+        <td>
+          <input type="number" [(ngModel)]="item.qtd" (change)="atualizarQuantidade(item)" min="1" class="form-control">
+        </td>
+        <td>R$ {{ item.valor | number:'1.2-2' }}</td>
+        <td>R$ {{ item.total | number:'1.2-2' }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="removeItem(item)">Remover</button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3" class="text-right">Total:</th>
+        <th class="text-center">R$ {{ totalCesta | number:'1.2-2' }}</th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div *ngIf="lista.length > 0" class="text-end">
+    <div class="input btn-group">
+      <button class="btn btn-danger" (click)="limparCesta()">Limpar Cesta</button>
+      <button class="btn btn-primary"(click)="gravarPedido()">Gerar Pedido</button>
+    </div>
+  </div>
+  <div *ngIf="lista.length > 0" class="col-md-6">
+    <br>
+    <a href="./vitrine" class="btn btn-secondary">Voltar</a>
+  </div>
+
+  <div *ngIf="lista.length === 0" class="d-grid gap-3 mt-5">
+    <a href="./vitrine" class="btn btn-primary">Sua cesta está vazia. Continuar explorando!</a>
+  </div>
+</div>

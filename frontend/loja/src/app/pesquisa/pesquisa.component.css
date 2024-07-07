@@ -1,0 +1,17 @@
+@media screen and (max-width:500px){
+
+    h5{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    };
+    img{
+        width: 70%;
+    }
+    
+    button {
+        font-size: 11px;
+        width: 10%;
+    }
+    }

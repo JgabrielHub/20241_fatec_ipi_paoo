@@ -1,0 +1,33 @@
+
+<div class="container mt-5">
+<div class="row justify-content-center" *ngIf="mensagem.length>0">
+  <div class="col-md-6">
+<div class="card h-100">
+      <div class="card-header text-center">
+      <h2 class="card-title"><i class="bi-person-circle" style="width: 500px;"></i>Sessão Ativa</h2>
+      </div>
+      <div class="card-body">
+        <h3 class="card-text">{{mensagem}}</h3>
+        <br>
+        <a class="btn btn-info w-100 mb-2"  href="./cadastro">consultar dados</a>
+        <p class="card-text">Deseja sair?</p>
+        <button class="btn btn-primary w-100 mb-2" (click)="fazerLogout()">Sair</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center" *ngIf="mensagem.length<1">
+  <div class="col-md-6">
+<div class="card h-100">
+      <div class="card-header text-center">
+      <h2 class="card-title"><i class="bi-person-circle" style="width: 500px;"></i>Sessão Encerrada</h2>
+      </div>
+      <br>
+      <div class="card-body">
+        <a class="btn btn-primary w-100 mb-2 me-2"  href="./vitrine">Tela inicial</a>
+      <br>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

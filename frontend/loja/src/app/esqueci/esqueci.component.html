@@ -1,0 +1,28 @@
+<div class="container-lg">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card mt-5">
+        <div class="card-header text-center card-header-azul">
+          <h2>Recuperar senha</h2>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="enviarEmail()">
+            <div class="alert alert-info">{{mensagem}}</div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu email" [(ngModel)]="obj.email" name="email" required>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+            <br>
+          </form>
+        </div>
+        <div class="card-footer text-center">
+          <a href="./cadastro" class="card-link">Não possuo cadastro</a>
+          <a href="./login" class="card-link">Tentar entrar novamente</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
